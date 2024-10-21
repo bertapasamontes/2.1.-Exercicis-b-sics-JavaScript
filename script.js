@@ -38,9 +38,17 @@ mensajeRetrasado = () => {
 mensajeRetrasado();
 
 //Exercici 1.2: Operador ternari
-//ex.1
+//ex.1: ternario básico
 function potConduir(edad) {
    let resultado = edad > 17 ? "Pots conduir":"No pots conduir";
    return resultado;
 }
 console.log(potConduir(19));
+
+//ex.2: Operador de comparación
+comparadorNums=(num1, num2) => {
+    let resultado = 
+        num1 == num2 ? "Los numeros son iguales, cambia uno, anda" : num1>num2 ?  'num1 és més gran' : 'num2 és més gran';
+    return resultado;
+}
+console.log(comparadorNums(0, 1));

@@ -1,13 +1,18 @@
 //S2.1. Exercicis bàsics JavaScript
+//Exercici 1.1: Arrow functions
 //ex.1
+console.log(" -------------- 1.1: Arrow functions | ex.1");
 add = (a, b) => a + b;
 console.log("Suma de 7 y 5 = ",add(7,5));
 
+
 //ex.2
+console.log(" -------------- 1.1: Arrow functions | ex.2");
 randomNumber = () => Math.floor(Math.random() * 101);;
 console.log("Numero random de 0 a 100 = ",randomNumber());
 
 //ex.3
+console.log(" -------------- 1.1: Arrow functions | ex.3");
 class person {
     constructor(name) { 
         this.name = name;
@@ -18,6 +23,7 @@ const Rodolfo = new person("Rodolfo");
 Rodolfo.greet();
 
 //ex.4
+console.log(" -------------- 1.1: Arrow functions | ex.4");
 printNumbers = (array) => {
     for (i=0; i<array.length; i++){
         printNumbersIsnideLopp = () => console.log(array[i]);
@@ -28,6 +34,7 @@ array=[10,20,30,40,50,60];
 printNumbers(array);
 
 //ex.5
+console.log(" -------------- 1.1: Arrow functions | ex.5");
 mensajeRetrasado = () => {
     console.log("Hola");
     imprimir = ()=> console.log("No tengo wifi");
@@ -39,6 +46,7 @@ mensajeRetrasado();
 
 //Exercici 1.2: Operador ternari
 //ex.1: ternario básico
+console.log(" --------------  1.2: Operador ternari | ex.1");
 function potConduir(edad) {
    let resultado = edad > 17 ? "Pots conduir":"No pots conduir";
    return resultado;
@@ -46,6 +54,7 @@ function potConduir(edad) {
 console.log(potConduir(19));
 
 //ex.2: Operador de comparación
+console.log(" --------------  1.2: Operador ternari | ex.2");
 comparadorNums=(num1, num2) => {
     let resultado = 
         num1 == num2 ? "Los numeros son iguales, cambia uno, anda" : num1>num2 ?  'num1 és més gran' : 'num2 és més gran';
@@ -54,6 +63,7 @@ comparadorNums=(num1, num2) => {
 console.log(comparadorNums(0, 1));
 
 //ex.3 Operador ternari enllaçats i amb funcions
+console.log(" --------------  1.2: Operador ternari | ex.3");
 tipoNum = (num) => {
     let resultado = 
         num == 0 ? "El num és 0" : 
@@ -72,6 +82,7 @@ trobarMaxim = (a, b, c) => {
 console.log(trobarMaxim(-6,-10,-3));
 
 //ex.4 Operador ternari amb bucle
+console.log(" --------------  1.2: Operador ternari | ex.4");
 function parOimpar(array){
     for (i=0; i<array.length; i++){ 
         let resultado = array[i]%2 == 0 ? "El numero "+array[i] +" es par": "El numero "+array[i] +" es impar";
@@ -83,9 +94,22 @@ console.log(parOimpar(array));
 
 
 //Exercici 1.3: Callbacks
-//ex.1
+//ex.1: callback basic
+console.log(" --------------  1.3: Callbacks | ex.1");
 callback = (numero) => console.log(1*numero);
 function processar(nombre, callback){
     callback(nombre);
 }
 processar(3, callback);
+
+//ex.2 callback + operacions matemàtiques
+console.log(" --------------  1.3: Callbacks | ex.2");
+function calculadora (num1, num2, callback){
+    return callback(num1, num2);
+}
+function sumar(num1,num2){
+    let suma = num1+num2;
+    console.log(num1+ " + "+ num2 + " = " + suma);
+}
+const resultado = calculadora(333,10,sumar);
+console.log(resultado);

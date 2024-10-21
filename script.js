@@ -16,3 +16,13 @@ class person {
 }
 const Rodolfo = new person("Rodolfo");
 Rodolfo.greet();
+
+//ex.4
+printNumbers = (array) => {
+    for (i=0; i<array.length; i++){
+        printNumbersIsnideLopp = () => console.log(array[i]);
+        printNumbersIsnideLopp();
+    }
+}
+array=[10,20,30,40,50,60];
+printNumbers(array);

@@ -113,3 +113,12 @@ function sumar(num1,num2){
 }
 const resultado = calculadora(333,10,sumar);
 console.log(resultado);
+
+//ex.3 callbacks en funcions asíncrones
+console.log(" --------------  1.3: Callbacks | ex.3"); 
+
+const saludar = (nombre) => {console.log("Hola "+ nombre)};
+function esperarISaludar (nombre, callback){
+    setTimeout(() => callback(nombre), 2000);
+}
+esperarISaludar("Timmy",saludar);

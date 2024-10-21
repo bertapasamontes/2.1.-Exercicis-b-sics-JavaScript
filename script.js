@@ -80,3 +80,12 @@ function parOimpar(array){
 }
 array=[1,33,20206,4,0,6];
 console.log(parOimpar(array));
+
+
+//Exercici 1.3: Callbacks
+//ex.1
+callback = (numero) => console.log(1*numero);
+function processar(nombre, callback){
+    callback(nombre);
+}
+processar(3, callback);

@@ -36,3 +36,11 @@ mensajeRetrasado = () => {
     setTimeout(imprimir2, 5000);
 }
 mensajeRetrasado();
+
+//Exercici 1.2: Operador ternari
+//ex.1
+function potConduir(edad) {
+   let resultado = edad > 17 ? "Pots conduir":"No pots conduir";
+   return resultado;
+}
+console.log(potConduir(19));

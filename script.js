@@ -53,7 +53,7 @@ comparadorNums=(num1, num2) => {
 }
 console.log(comparadorNums(0, 1));
 
-//ex.3
+//ex.3 Operador ternari enllaçats i amb funcions
 tipoNum = (num) => {
     let resultado = 
         num == 0 ? "El num és 0" : 
@@ -70,3 +70,13 @@ trobarMaxim = (a, b, c) => {
     return numMax;
 }
 console.log(trobarMaxim(-6,-10,-3));
+
+//ex.4 Operador ternari amb bucle
+function parOimpar(array){
+    for (i=0; i<array.length; i++){ 
+        let resultado = array[i]%2 == 0 ? "El numero "+array[i] +" es par": "El numero "+array[i] +" es impar";
+        console.log(resultado);
+    }
+}
+array=[1,33,20206,4,0,6];
+console.log(parOimpar(array));

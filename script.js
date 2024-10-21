@@ -26,3 +26,13 @@ printNumbers = (array) => {
 }
 array=[10,20,30,40,50,60];
 printNumbers(array);
+
+//ex.5
+mensajeRetrasado = () => {
+    console.log("Hola");
+    imprimir = ()=> console.log("No tengo wifi");
+    imprimir2 = ()=> console.log("Luego nos vemos");
+    setTimeout(imprimir, 3000);
+    setTimeout(imprimir2, 5000);
+}
+mensajeRetrasado();

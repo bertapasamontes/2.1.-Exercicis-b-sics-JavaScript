@@ -8,7 +8,7 @@ console.log("Suma de 7 y 5 = ",add(7,5));
 
 //ex.2
 console.log(" -------------- 1.1: Arrow functions | ex.2");
-randomNumber = () => Math.floor(Math.random() * 101);;
+randomNumber = () => Math.floor(Math.random() * 101);
 console.log("Numero random de 0 a 100 = ",randomNumber());
 
 //ex.3
@@ -86,7 +86,7 @@ console.log(" --------------  1.2: Operador ternari | ex.4");
 function parOimpar(array){
     for (i=0; i<array.length; i++){ 
         let resultado = array[i]%2 == 0 ? "El numero "+array[i] +" es par": "El numero "+array[i] +" es impar";
-        console.log(resultado);
+        return resultado;
     }
 }
 array=[1,33,20206,4,0,6];
@@ -109,7 +109,7 @@ function calculadora (num1, num2, callback){
 }
 function sumar(num1,num2){
     let suma = num1+num2;
-    console.log(num1+ " + "+ num2 + " = " + suma);
+    return num1+ " + "+ num2 + " = " + suma;
 }
 const resultado = calculadora(333,10,sumar);
 console.log(resultado);
@@ -122,3 +122,14 @@ function esperarISaludar (nombre, callback){
     setTimeout(() => callback(nombre), 2000);
 }
 esperarISaludar("Timmy",saludar);
+
+//ex.4 Callbacks amb arrays
+console.log(" --------------  1.3: Callbacks | ex.4"); 
+saludo = () => {return "Holap"};
+function processarElements (array, callback){
+    for (i=0; i<array.length; i++){
+        console.log(array[i], callback());
+    }
+}
+array = [1,2,3,4,5,6,7];
+processarElements(array,saludo);

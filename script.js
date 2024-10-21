@@ -52,3 +52,21 @@ comparadorNums=(num1, num2) => {
     return resultado;
 }
 console.log(comparadorNums(0, 1));
+
+//ex.3
+tipoNum = (num) => {
+    let resultado = 
+        num == 0 ? "El num és 0" : 
+        num > 0 ?  'El num és positiu' : 'El num és negatiu';
+    return resultado;
+}
+console.log(tipoNum(-1));
+
+trobarMaxim = (a, b, c) => {
+    let numMax =
+        a > b & a >c ? "El num A:"+ a + " es el mayor":
+        b > a & b >c ? "El num B:"+ b + " es el mayor":
+        "El num C:"+ c + " es el mayor";
+    return numMax;
+}
+console.log(trobarMaxim(-6,-10,-3));

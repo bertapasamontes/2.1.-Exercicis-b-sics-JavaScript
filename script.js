@@ -177,7 +177,7 @@ const objecte1 = {
 const objecte2 = {...objecte1};
 objecte2.nombre="objeto2";
 objecte2.id="2";
-objecte2.localidad="Castillón";
+objecte2.localidad="Castellón";
 console.log(objecte2);
 
 //ex.4 Rest en Destructuring
@@ -197,3 +197,18 @@ function spreadEnFunciones(a,b,c){
 }
 arraySpread = ["esto","va","así?"];
 console.log(spreadEnFunciones(...arraySpread));
+
+
+//ex.6 Fusionant Objectes amb Spread
+console.log(" --------------  1.4: Rest & Spread operators | ex.6");
+
+const objeto1 = {
+    nombre : "objeto1",
+    apellido : "volador",
+}
+const objeto2 = {
+    nom : "objeto2",
+    cognom : "volador no identificado",
+}
+const objeto3 = {...objeto1,...objeto2};
+console.log(objeto3);

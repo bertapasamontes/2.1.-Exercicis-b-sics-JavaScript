@@ -133,3 +133,12 @@ function processarElements (array, callback){
 }
 array = [1,2,3,4,5,6,7];
 processarElements(array,saludo);
+
+//ex.5
+console.log(" --------------  1.3: Callbacks | ex.5"); 
+function processarCadena(string, callback){
+    let enMayus = string.toUpperCase();
+    callback(enMayus);
+}
+imprime = (string) => console.log(string);
+processarCadena("esto se debe impimir en mayus", imprime);

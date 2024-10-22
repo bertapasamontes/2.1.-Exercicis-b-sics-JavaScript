@@ -231,3 +231,15 @@ function checkPar(num){
     return num%2 == 0;
 }
 console.log(arrayEjercicio5_2);
+
+
+//ex3 Find
+console.log(" --------------  1.5: Array transformations | ex.3");
+
+let arrayEjercicio5_3 = [1, 10 , 8, 11];
+let arrayEjercicio5_3_1 = arrayEjercicio5_3.find(checkBigger);
+
+function checkBigger(num){
+    return num>10;
+}
+console.log(arrayEjercicio5_3_1);

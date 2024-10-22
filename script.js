@@ -166,7 +166,7 @@ function suma(...nums){
 console.log("suma del array (1,2,3,4,5,10,10,10,10)=",suma(1,2,3,4,5,10,10,10,10));
 
 
-//ex.3 Operador Rest en funciones
+//ex.3 Spread con objetos
 console.log(" --------------  1.4: Rest & Spread operators | ex.3");
 
 const objecte1 = {
@@ -179,3 +179,10 @@ objecte2.nombre="objeto2";
 objecte2.id="2";
 objecte2.localidad="Castillón";
 console.log(objecte2);
+
+//ex.4 Rest en Destructuring
+console.log(" --------------  1.4: Rest & Spread operators | ex.4");
+
+const array_ex_4 =["hola", "esto", "es", "un", "array"];
+const [array4_1,array4_2, ...array4_3] = array_ex_4;
+console.log(array4_3);

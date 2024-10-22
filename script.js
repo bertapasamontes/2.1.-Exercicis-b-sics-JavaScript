@@ -238,8 +238,17 @@ console.log(" --------------  1.5: Array transformations | ex.3");
 
 let arrayEjercicio5_3 = [1, 10 , 8, 11];
 let arrayEjercicio5_3_1 = arrayEjercicio5_3.find(checkBigger);
-
 function checkBigger(num){
     return num>10;
 }
 console.log(arrayEjercicio5_3_1);
+
+//ex4 Reduce
+console.log(" --------------  1.5: Array transformations | ex.4");
+
+let arrayEjercicio5_4 = [13, 7, 8, 21];
+let arrayEjercicio5_4_1 = arrayEjercicio5_4.reduce(sumameEsta,0);
+function sumameEsta(total, num){
+    return total + num;
+}
+console.log(arrayEjercicio5_4_1);

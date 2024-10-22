@@ -142,3 +142,12 @@ function processarCadena(string, callback){
 }
 imprime = (string) => console.log(string);
 processarCadena("esto se debe impimir en mayus", imprime);
+
+
+//Exercici 1.4: Rest & Spread operators
+//ex.1
+console.log(" --------------  1.4: Rest & Spread operators | ex.1");
+array1 = ['esto', 'es', 'array1'];
+array2 = ['aqui', 'empieza', 'array2'];
+array3 = [...array1, ...array2];
+console.log(array3);

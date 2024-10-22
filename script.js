@@ -164,3 +164,18 @@ function suma(...nums){
 }
 
 console.log("suma del array (1,2,3,4,5,10,10,10,10)=",suma(1,2,3,4,5,10,10,10,10));
+
+
+//ex.3 Operador Rest en funciones
+console.log(" --------------  1.4: Rest & Spread operators | ex.3");
+
+const objecte1 = {
+    nombre: "objeto1",
+    id:1,
+    localidad:"canarias",
+};
+const objecte2 = {...objecte1};
+objecte2.nombre="objeto2";
+objecte2.id="2";
+objecte2.localidad="Castillón";
+console.log(objecte2);

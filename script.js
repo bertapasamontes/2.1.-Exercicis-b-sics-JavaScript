@@ -212,3 +212,14 @@ const objeto2 = {
 }
 const objeto3 = {...objeto1,...objeto2};
 console.log(objeto3);
+
+
+//Exercici 1.5: Array transformations
+//ex.1 
+console.log(" --------------  1.5: Array transformations | ex.1");
+let arrayEjercicio5_1 = [10,2,7,44];
+let arrayEjercicio5_1_1 = arrayEjercicio5_1.map(elevarNum);
+function elevarNum(num){
+    return num**2;
+}
+console.log(arrayEjercicio5_1_1);

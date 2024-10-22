@@ -186,3 +186,14 @@ console.log(" --------------  1.4: Rest & Spread operators | ex.4");
 const array_ex_4 =["hola", "esto", "es", "un", "array"];
 const [array4_1,array4_2, ...array4_3] = array_ex_4;
 console.log(array4_3);
+
+
+//ex.5 Spread en Funciones
+console.log(" --------------  1.4: Rest & Spread operators | ex.5");
+
+function spreadEnFunciones(a,b,c){
+    return "a = "+a+" b = "+b+" c = "+c;
+    
+}
+arraySpread = ["esto","va","así?"];
+console.log(spreadEnFunciones(...arraySpread));

@@ -215,11 +215,19 @@ console.log(objeto3);
 
 
 //Exercici 1.5: Array transformations
-//ex.1 
+//ex.1 Map
 console.log(" --------------  1.5: Array transformations | ex.1");
-let arrayEjercicio5_1 = [10,2,7,44];
+let arrayEjercicio5_1 = [1,2,3,4];
 let arrayEjercicio5_1_1 = arrayEjercicio5_1.map(elevarNum);
 function elevarNum(num){
     return num**2;
 }
 console.log(arrayEjercicio5_1_1);
+
+//ex2 Filter
+console.log(" --------------  1.5: Array transformations | ex.2");
+let arrayEjercicio5_2 = arrayEjercicio5_1.filter(checkPar);
+function checkPar(num){
+    return num%2 == 0;
+}
+console.log(arrayEjercicio5_2);

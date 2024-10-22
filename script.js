@@ -145,9 +145,22 @@ processarCadena("esto se debe impimir en mayus", imprime);
 
 
 //Exercici 1.4: Rest & Spread operators
-//ex.1
+//ex.1 Spread en Arrays
 console.log(" --------------  1.4: Rest & Spread operators | ex.1");
 array1 = ['esto', 'es', 'array1'];
 array2 = ['aqui', 'empieza', 'array2'];
 array3 = [...array1, ...array2];
 console.log(array3);
+
+//ex.2 Operador Rest en funciones
+console.log(" --------------  1.4: Rest & Spread operators | ex.2");
+
+function suma(...nums){
+    let total = 0;
+    for (const num of nums){
+         total += num;
+    }
+    return total;
+}
+
+console.log("suma del array (1,2,3,4,5,10,10,10,10)=",suma(1,2,3,4,5,10,10,10,10));

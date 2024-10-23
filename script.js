@@ -307,9 +307,16 @@ for (const key in obj) {
     }
 }
 
-//ex.5 For-in
+//ex.5 For-of amb break
 console.log(" --------------  1.6: Array loops | ex.5");
 for (const num of numeros) {
     console.log(num);
     if(num == 5) break;   
+}
+
+//ex.6 For-of amb index
+console.log(" --------------  1.6: Array loops | ex.6");
+
+for (const nom of noms) {
+    console.log("índice "+noms.indexOf(nom)+ ": "+nom);
 }

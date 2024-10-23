@@ -279,3 +279,9 @@ let noms = ['Anna', 'Bernat', 'Clara'];
 noms.forEach(element => {
     console.log(element);
 });
+
+
+//ex.2 for-of
+for (nom of noms){
+    console.log(nom);
+}

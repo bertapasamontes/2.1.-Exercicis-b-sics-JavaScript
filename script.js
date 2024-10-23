@@ -269,3 +269,13 @@ let arrayEjercicio5_6 = [11, 12, 13, 14];
 
 console.log(arrayEjercicio5_6.every((num)=>num>10));
 console.log(arrayEjercicio5_6.some((num)=>num>10));
+
+
+//Exercici 1.6: Array loops
+//ex.1 forEach
+
+let noms = ['Anna', 'Bernat', 'Clara'];
+
+noms.forEach(element => {
+    console.log(element);
+});

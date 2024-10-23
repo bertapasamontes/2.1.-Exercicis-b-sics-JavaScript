@@ -243,7 +243,7 @@ function checkBigger(num){
 }
 console.log(arrayEjercicio5_3_1);
 
-//ex4 Reduce
+//ex.4 Reduce
 console.log(" --------------  1.5: Array transformations | ex.4");
 
 let arrayEjercicio5_4 = [13, 7, 8, 21];
@@ -252,3 +252,11 @@ function sumameEsta(total, num){
     return total + num;
 }
 console.log(arrayEjercicio5_4_1);
+
+//ex.5 Funcion en una sola línea
+console.log(" --------------  1.5: Array transformations | ex.5");
+let arrayEjercicio5_5 = [ 1, 3, 7, 10 ,15, 17, 11, 5, 8, 12, 9];
+
+const resultadoSumatorioChungo2 = (nums) => nums.filter(num => num > 9).reduce((total,num) => total+num*2, 0);
+
+console.log(resultadoSumatorioChungo2(arrayEjercicio5_5));

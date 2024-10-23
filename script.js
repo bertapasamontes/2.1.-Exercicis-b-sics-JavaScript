@@ -274,6 +274,7 @@ console.log(arrayEjercicio5_6.some((num)=>num>10));
 
 //Exercici 1.6: Array loops
 //ex.1 forEach
+console.log(" --------------  1.6: Array loops | ex.1");
 
 let noms = ['Anna', 'Bernat', 'Clara'];
 
@@ -282,11 +283,26 @@ noms.forEach(element => {
 });
 
 //ex.2 for-of
+console.log(" --------------  1.6: Array loops | ex.2");
 for (nom of noms){
     console.log(nom);
 }
 
 //ex.3 filter en array
-let numeros = [1, 2, 3, 4, 5, 6,7,8,9,3,22];
+console.log(" --------------  1.6: Array loops | ex.3");
+let numeros = [1, 2, 3, 4, 5, 6];
 let numerosFiltrados = numeros.filter(checkPar);
 console.log(numerosFiltrados);
+
+//ex.4 For-in
+console.log(" --------------  1.6: Array loops | ex.4");
+let obj = { 
+    nom: "Ona", 
+    edat: 25, 
+    ciutat: 'Barcelona'
+};
+for (const key in obj) {
+    if (Object.prototype.hasOwnProperty.call(obj, key)) {
+        console.log(key+": "+obj[key]);
+    }
+}

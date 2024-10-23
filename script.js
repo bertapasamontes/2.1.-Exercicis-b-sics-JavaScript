@@ -306,3 +306,10 @@ for (const key in obj) {
         console.log(key+": "+obj[key]);
     }
 }
+
+//ex.5 For-in
+console.log(" --------------  1.6: Array loops | ex.5");
+for (const num of numeros) {
+    console.log(num);
+    if(num == 5) break;   
+}

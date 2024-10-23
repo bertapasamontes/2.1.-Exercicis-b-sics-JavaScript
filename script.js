@@ -227,6 +227,7 @@ console.log(arrayEjercicio5_1_1);
 //ex2 Filter
 console.log(" --------------  1.5: Array transformations | ex.2");
 let arrayEjercicio5_2 = arrayEjercicio5_1.filter(checkPar);
+
 function checkPar(num){
     return num%2 == 0;
 }
@@ -280,8 +281,12 @@ noms.forEach(element => {
     console.log(element);
 });
 
-
 //ex.2 for-of
 for (nom of noms){
     console.log(nom);
 }
+
+//ex.3 filter en array
+let numeros = [1, 2, 3, 4, 5, 6,7,8,9,3,22];
+let numerosFiltrados = numeros.filter(checkPar);
+console.log(numerosFiltrados);

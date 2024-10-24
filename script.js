@@ -325,14 +325,52 @@ for (const nom of noms) {
 //ex.1 Creació d'una Promesa
 console.log(" --------------  1.7: Promises & Async/Await | ex.1");
 
+// const PromesaDeMeñique = new Promise((resolve, reject) => {
+//     setTimeout(()=>{
+//         resolve(console.log("Hola, món"));
+//         reject(new Error("Adiós, no te quiero ver"));
+//     },2000);
+    
+// });
+
 const PromesaDeMeñique = new Promise((resolve, reject) => {
-    setTimeout(()=>{resolve(console.log("Hola, món"));},2000);
-});
+    setTimeout(
+        ()=>{
+            let x=0;
+            if(x==0){
+                 resolve("Hola, món");
+            }
+            else{
+                reject("No te quiero ver.");
+            }
+            
+        }
+    ,2000)
+})
 
 //ex.2 Utilització d'una Promesa
 console.log(" --------------  1.7: Promises & Async/Await | ex.2");
-PromesaDeMeñique.then((result) => {
-    console.log("tenemos una promesa de meñique",result);
-}).catch((error) => {
-    console.error("ups",error);
+
+PromesaDeMeñique.then(mensaje => {
+    console.log(mensaje, ".mensaje exitoso");
+}).catch(error => {
+    console.error(error);
 });
+
+
+//ex.3 Promesa amb reject
+console.log(" --------------  1.7: Promises & Async/Await | ex.3");
+
+function Promesa2(input) {
+    return new Promise((resolve, reject) => {
+        setTimeout(()=> {
+            if(input=="Hola"){
+                resolve(console.log("PromesaAceptada"));
+            }
+            else{
+                reject(console.log("nop"));
+            }
+        },2000);
+    });
+}
+Promesa2("Hola").then(mensaje =>{console.log(mensaje)}).catch(error=>{console.log(error)});

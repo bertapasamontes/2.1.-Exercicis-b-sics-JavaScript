@@ -325,14 +325,6 @@ for (const nom of noms) {
 //ex.1 Creació d'una Promesa
 console.log(" --------------  1.7: Promises & Async/Await | ex.1");
 
-// const PromesaDeMeñique = new Promise((resolve, reject) => {
-//     setTimeout(()=>{
-//         resolve(console.log("Hola, món"));
-//         reject(new Error("Adiós, no te quiero ver"));
-//     },2000);
-    
-// });
-
 const PromesaDeMeñique = new Promise((resolve, reject) => {
     setTimeout(
         ()=>{
@@ -374,3 +366,11 @@ function Promesa2(input) {
     });
 }
 Promesa2("Hola").then(mensaje =>{console.log(mensaje)}).catch(error=>{console.log(error)});
+
+//ex.4 Ús de async/await
+console.log(" --------------  1.7: Promises & Async/Await | ex.4");
+
+async function esperarPromesa(promesa) {
+    return await promesa;
+}
+esperarPromesa(PromesaDeMeñique);

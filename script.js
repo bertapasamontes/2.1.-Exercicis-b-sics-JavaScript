@@ -328,6 +328,9 @@ console.log(" --------------  1.7: Promises & Async/Await | ex.1");
 const PromesaDeMeñique = new Promise((resolve, reject) => {
     setTimeout(()=>{resolve(console.log("Hola, món"));},2000);
 });
+
+//ex.2 Utilització d'una Promesa
+console.log(" --------------  1.7: Promises & Async/Await | ex.2");
 PromesaDeMeñique.then((result) => {
     console.log("tenemos una promesa de meñique",result);
 }).catch((error) => {

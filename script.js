@@ -333,12 +333,12 @@ const PromesaDeMeñique = new Promise((resolve, reject) => {
                  resolve("Hola, món");
             }
             else{
-                reject("No te quiero ver.");
+                reject(new Error ("No te quiero ver."));
             }
             
         }
     ,2000)
-})
+});
 
 //ex.2 Utilització d'una Promesa
 console.log(" --------------  1.7: Promises & Async/Await | ex.2");
@@ -360,7 +360,7 @@ function Promesa2(input) {
                 resolve(console.log("PromesaAceptada"));
             }
             else{
-                reject(console.log("nop"));
+                reject(new Error("nop"));
             }
         },2000);
     });
@@ -371,6 +371,22 @@ Promesa2("Hola").then(mensaje =>{console.log(mensaje)}).catch(error=>{console.lo
 console.log(" --------------  1.7: Promises & Async/Await | ex.4");
 
 async function esperarPromesa(promesa) {
-    return await promesa;
+    const promesaFetched =  await promesa;
+    console.log(promesaFetched);
+}
+esperarPromesa(PromesaDeMeñique);
+
+
+//ex.5 Gestió d'errors amb async/await
+console.log(" --------------  1.7: Promises & Async/Await | ex.5");
+async function esperarPromesa(promesa) {
+    try{
+        const promesaFetched =  await promesa;
+        console.log(promesaFetched);
+    } 
+    catch(err){
+        console.log(err.message);
+    }
+    
 }
 esperarPromesa(PromesaDeMeñique);

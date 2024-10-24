@@ -320,3 +320,16 @@ console.log(" --------------  1.6: Array loops | ex.6");
 for (const nom of noms) {
     console.log("índice "+noms.indexOf(nom)+ ": "+nom);
 }
+
+//Exercici 1.7: Promises & Async/Await
+//ex.1 Creació d'una Promesa
+console.log(" --------------  1.7: Promises & Async/Await | ex.1");
+
+const PromesaDeMeñique = new Promise((resolve, reject) => {
+    setTimeout(()=>{resolve(console.log("Hola, món"));},2000);
+});
+PromesaDeMeñique.then((result) => {
+    console.log("tenemos una promesa de meñique",result);
+}).catch((error) => {
+    console.error("ups",error);
+});

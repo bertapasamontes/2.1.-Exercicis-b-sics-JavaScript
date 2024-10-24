@@ -390,3 +390,36 @@ async function esperarPromesa(promesa) {
     
 }
 esperarPromesa(PromesaDeMeñique);
+
+
+//ex.6 Promise.all
+console.log(" --------------  1.7: Promises & Async/Await | ex.6");
+function promesa1 () {
+    return new Promise((resolve, reject) => {
+        setTimeout(()=>{
+            let hojalata = true;
+            if(hojalata == true){
+                resolve("Hojalata vive");
+            }
+            else{
+                reject(new Error("Hojalata fallece"));
+            }
+        },2000);
+    })
+};
+
+function promesa2 () {
+    return new Promise((resolve, reject) => {
+        setTimeout(()=>{
+            let HombrePaja = true;
+            if(HombrePaja == true){
+                resolve("HombrePaja se va");
+            }
+            else{
+                reject(new Error("HombrePaja vuelve"));
+            }
+        },3000);
+    })
+};
+
+Promise.all([promesa1(), promesa2()]).then(mensaje =>{console.log(mensaje)}).catch(error=>{console.error(error)});

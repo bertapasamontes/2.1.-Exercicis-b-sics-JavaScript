@@ -13,11 +13,11 @@ Cap.
 
 🛠️Instal·lació
 
-Obrir la consola.
+Descarregar l'arxiu.
 
 ▶️Execució
 
-Cap.
+Obrir la consola.
 
 🌐Desplegament
 

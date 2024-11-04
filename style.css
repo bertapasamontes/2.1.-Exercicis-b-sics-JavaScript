@@ -1,0 +1,109 @@
+.ejercicio{
+    margin-top: 1.5rem;
+}
+
+.nivel{
+    margin-top: 2.5rem;
+}
+
+pre, code{
+    margin: 1rem 0 1rem 0;
+    border-radius: 10px;
+    color: #8e7dbe;
+    padding: .5em;
+    font-size: .9em;
+    background-color:#f3f4f6;
+    /* background-color: white; */
+}
+
+samp{
+    color: #839883;
+    &.exemple{
+        color:grey;
+    }
+}
+var{
+    color:#e0b046; 
+    font-weigth: 600;
+}
+var.promise {
+    color: green;
+}
+var.NewPromise {
+    color: purple;
+}
+var.error {
+    color: #EB2D3A;
+}
+
+
+.field{
+   margin-top: 12px;
+}
+
+.button 
+{
+    margin-left: 8px;
+ }
+
+ .input 
+{
+    margin-left: 8px;
+ }
+
+.exercice{
+    margin-bottom:4% !important;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+.menu {
+    position: fixed;
+    top: 0;
+    width: 350px;
+    height:100%;
+    left:-600px;
+    color:black;
+    background-color:white;
+    overflow-y: auto;
+    transition: left 0.3s ease; 
+    z-index: 10;    
+}
+
+.menu.activado {
+    left: 0px !important; 
+}
+
+/* .navbar-menu{
+    visibility:hidden;
+} */
+
+/* Estilos del botón burger */
+.navbar-burger {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    z-index: 20;
+    display: block !important;
+}
+
+.navbar, .navbar-end, .navbar-menu, .navbar-start{
+    flex-direction:column;
+}
+
+a:hover{
+    background-color:#e2eafc;
+}
+
+#contenido{
+    transition: left 0.3s ease;
+}
+
+#contenido.activado{
+    margin-left: 360px !important;
+}

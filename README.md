@@ -2,7 +2,7 @@
 
 ## 📄 Descripció
 
-Aquest repositori conté una sèrie d'exercicis bàsics en JavaScript per practicar funcions fletxa, operador ternari, callbacks, transformacions d'arrays, promeses i més. Els exercicis es troben en el fitxer `script.js`, que es pot executar amb `index.html` per veure els resultats a la consola del navegador.
+Aquest repositori conté una sèrie d'exercicis bàsics en JavaScript per practicar funcions fletxa, operador ternari, callbacks, transformacions d'arrays, promeses i més. Els exercicis es troben en el fitxer `script.js`, que es pot executar amb `index.html` per veure els resultats a la consola del navegador i a la propia pantalla.
 
 ## ✨ Característiques
 
